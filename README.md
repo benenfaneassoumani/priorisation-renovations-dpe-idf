@@ -256,6 +256,17 @@ Emplacement : `code_postal_ban` · Taille des bulles : nombre de `numero_dpe`
 · Légende : `etiquette_dpe`
 
 ---
+## 7. Dashboard Power BI — Démonstration Vidéo
+
+Voici une vidéo de démonstration de l'interactivité du dashboard Power BI, illustrant comment les données peuvent être filtrées par département et par étiquette DPE pour adapter l'analyse.
+
+<video width="100%" controls>
+  <source src="./Démonstration_dashboard_dpe.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la balise vidéo.
+</video>
+
+*(Note : En cas de non possibilités de lire les vidéos directement dans le README
+[télécharger la vidéo ici](./Démonstration_dashboard_dpe.mp4) pour la visionner en local).*
 
 ## 8. Sécurité — avant de publier sur GitHub
 
