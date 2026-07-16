@@ -66,7 +66,9 @@ CENTROIDES_DEPARTEMENTS = {
 
 @st.cache_data
 def charger_donnees():
-    df = pd.read_csv("vue_priorite_renovation.csv")
+    import os
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    df = pd.read_csv(os.path.join(BASE_DIR, "vue_priorite_renovation.csv"))
     # Sécurité : uniformise les noms de colonnes attendus
     df.columns = [c.strip() for c in df.columns]
     df["code_departement_ban"] = df["code_departement_ban"].astype(str).str.zfill(2)
