@@ -262,14 +262,12 @@ Voici un aperçu du dashboard Power BI, illustrant comment les données peuvent 
 
 ![Aperçu du Dashboard Power BI](./apercu_dashboard.png)
 
-Pour mieux vous rendre compte du fonctionnement de l'outil, voici une courte démonstration vidéo :
+Pour voir l'outil en action et découvrir son interactivité, cliquez sur le lien ci-dessous pour visionner une courte vidéo de démonstration :
 
-<video width="100%" controls>
-  <source src="./Démonstration_dashboard_dpe.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas la balise vidéo.
-</video>
+▶️ **[Voir la vidéo de démonstration](./Démonstration_dashboard_dpe.mp4)**
 
-*(Note : Si la vidéo ne s'affiche pas directement sur GitHub, vous pouvez la [télécharger ici](./Démonstration_dashboard_dpe.mp4). De plus, l'outil complet est interactif : vous pouvez consulter et explorer le fichier `Dashboard_Priorisation_Renovations_DPE_IDF.pbix` situé dans le dossier `06_dashboard/` pour le tester en local).*
+*(Note : Le fichier source Power BI est mis à votre disposition. Vous pouvez télécharger le fichier `Dashboard_Priorisation_Renovations_DPE_IDF.pbix` situé dans le dossier `06_dashboard/` et l'ouvrir avec Power BI Desktop pour explorer vous-même l'outil en local).*
+
 
 ## 8. Sécurité — avant de publier sur GitHub
 
