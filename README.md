@@ -256,17 +256,20 @@ Emplacement : `code_postal_ban` · Taille des bulles : nombre de `numero_dpe`
 · Légende : `etiquette_dpe`
 
 ---
-## 7. Dashboard Power BI — Démonstration Vidéo
+## 7. Aperçu et Démonstration du Dashboard Power BI
 
-Voici une vidéo de démonstration de l'interactivité du dashboard Power BI, illustrant comment les données peuvent être filtrées par département et par étiquette DPE pour adapter l'analyse.
+Voici un aperçu du dashboard Power BI, illustrant comment les données peuvent être filtrées par département et par étiquette DPE pour adapter l'analyse. 
+
+![Aperçu du Dashboard Power BI](./apercu_dashboard.png)
+
+Pour mieux vous rendre compte du fonctionnement de l'outil, voici une courte démonstration vidéo :
 
 <video width="100%" controls>
   <source src="./Démonstration_dashboard_dpe.mp4" type="video/mp4">
   Votre navigateur ne supporte pas la balise vidéo.
 </video>
 
-*(Note : En cas de non possibilités de lire les vidéos directement dans le README
-[télécharger la vidéo ici](./Démonstration_dashboard_dpe.mp4) pour la visionner en local).*
+*(Note : Si la vidéo ne s'affiche pas directement sur GitHub, vous pouvez la [télécharger ici](./Démonstration_dashboard_dpe.mp4). De plus, l'outil complet est interactif : vous pouvez consulter et explorer le fichier `Dashboard_Priorisation_Renovations_DPE_IDF.pbix` situé dans le dossier `06_dashboard/` pour le tester en local).*
 
 ## 8. Sécurité — avant de publier sur GitHub
 
