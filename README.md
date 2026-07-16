@@ -30,7 +30,7 @@ budget contraint :
 
 ### Grille de lecture des étiquettes DPE
 
-| Étiquette | Consommation (kWh/m²/an) | Situation réglementaire |
+| Étiquette | Consommation (kWh/m²/an) | Situation  |
 |---|---|---|
 | A | < 70 | — |
 | B | 70 – 110 | — |
