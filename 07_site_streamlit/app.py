@@ -60,15 +60,15 @@ CENTROIDES_DEPARTEMENTS = {
     "95": (49.0500, 2.1200),
 }
 
-# -----------------------------------------------------------------
+
 # Chargement des données
-# -----------------------------------------------------------------
+
 
 @st.cache_data
 def charger_donnees():
     import os
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    df = pd.read_csv(os.path.join(BASE_DIR, "vue_priorite_renovation.csv"))
+    df = pd.read_csv(os.path.join(BASE_DIR, "vue_priorite_renovation.csv"), sep=";")
     # Sécurité : uniformise les noms de colonnes attendus
     df.columns = [c.strip() for c in df.columns]
     df["code_departement_ban"] = df["code_departement_ban"].astype(str).str.zfill(2)
@@ -83,9 +83,7 @@ except FileNotFoundError:
     )
     st.stop()
 
-# -----------------------------------------------------------------
 # Filtres (équivalent des segments Power BI)
-# -----------------------------------------------------------------
 
 st.sidebar.header("Filtres")
 
@@ -103,7 +101,7 @@ st.sidebar.markdown("---")
 st.sidebar.markdown(
     """
     **Liens**
-    📂 [Code source & pipeline SQL sur GitHub](https://github.com/ben-enfaneassoumani/priorisation-renovations-dpe-idf)
+    📂 [Code source & pipeline SQL sur GitHub](https://github.com/benenfaneassoumani/-priorisation-renovations-dpe-idf)
     💼 [Profil LinkedIn](https://linkedin.com/in/ben-enfaneassoumani)
     """
 )
@@ -117,9 +115,9 @@ if df_filtre.empty:
     st.warning("Aucune donnée ne correspond aux filtres sélectionnés.")
     st.stop()
 
-# -----------------------------------------------------------------
+
 # Titre
-# -----------------------------------------------------------------
+
 
 st.markdown(
     f"""
@@ -151,9 +149,9 @@ with st.expander("📖 Contexte du projet", expanded=True):
         """
     )
 
-# -----------------------------------------------------------------
+
 # KPI (cartes)
-# -----------------------------------------------------------------
+
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -165,9 +163,9 @@ col5.metric("Score de priorité moyen", f"{df_filtre['score_priorite'].mean():.2
 
 st.write("")
 
-# -----------------------------------------------------------------
+
 # Histogramme — Nombre de logements F/G par département
-# -----------------------------------------------------------------
+
 
 st.subheader("Nombre de logements F/G par département")
 
@@ -193,9 +191,8 @@ fig_hist = px.bar(
 fig_hist.update_layout(plot_bgcolor="white", paper_bgcolor="white")
 st.plotly_chart(fig_hist, use_container_width=True)
 
-# -----------------------------------------------------------------
 # Tableau + carte, côte à côte
-# -----------------------------------------------------------------
+
 
 col_gauche, col_droite = st.columns(2)
 
@@ -277,10 +274,11 @@ st.markdown(
     """
     <div style="text-align:center; font-size:13px; color:#5C6BC0;">
         Ben-Enfane Assoumani — Master 1 Statistique et Sciences des Données, Université de Montpellier<br>
-        <a href="https://github.com/ben-enfaneassoumani/priorisation-renovations-dpe-idf" style="color:#1A237E;">Code source & pipeline SQL sur GitHub</a>
+        <a href="https://github.com/benenfaneassoumani/-priorisation-renovations-dpe-idf" style="color:#1A237E;">Code source & pipeline SQL sur GitHub</a>
         &nbsp;·&nbsp;
         <a href="https://linkedin.com/in/ben-enfaneassoumani" style="color:#1A237E;">LinkedIn</a>
     </div>
     """,
     unsafe_allow_html=True,
+    
 )
