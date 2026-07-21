@@ -65,8 +65,7 @@ Les hypothèses chiffrées utilisées dans les calculs sont les suivantes :
 | Valorisation de l'énergie économisée | 0,25 €/kWh | Ordre de grandeur d'un prix moyen de l'électricité/gaz au m² |
 | Bonus d'urgence logement G | × 1,5 | Reflète le fait que les bailleurs ne peuvent déjà plus louer ce type de logement (contrainte immédiate, contrairement au F qui a jusqu'en 2028) |
 
-Aucune de ces valeurs ne provient d'un barème officiel d'un site d'un bailleur — elles
-sont présentées comme des hypothèses de modélisation raisonnables,
+Ces valeurs sont présentées comme des hypothèses de modélisation,
 modifiables en un point unique du code (la vue SQL) si des chiffres réels
 sont communiqués par une entreprise. À noter en particulier : aucune source
 publique consultée ne distingue un coût au m² propre aux logements F d'un
