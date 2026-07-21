@@ -57,7 +57,6 @@ Les hypothèses chiffrées utilisées dans les calculs sont les suivantes :
 
 | Paramètre | Valeur retenue | Origine |
 |---|---|---|
-| Budget total disponible | 80 M€ | Hypothèse de travail (ordre de grandeur plausible pour un plan annuel de rénovation) |
 | Coût de rénovation — logement G | 800 €/m² | Haut de la fourchette documentée pour une rénovation F/G → C/B : 400 à 800 €/m² selon [koutravo.fr](https://www.koutravo.fr/dpe-f-ou-g-quel-budget-prevoir-pour-une-renovation-complete/), 400-700 €/m² pour une rénovation globale performante selon l'ADEME (cité par [blog.moteurimmo.fr](https://blog.moteurimmo.fr/investir-dans-une-passoire-thermique-une-strategie-de-valorisation-durable/)) |
 | Coût de rénovation — logement F | 500 €/m² | Milieu de la même fourchette documentée, travaux généralement moins lourds qu'un G |
 | Loyer de référence | 18 €/m²/mois | Ordre de grandeur d'un loyer intermédiaire francilien |
